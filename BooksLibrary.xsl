@@ -8,7 +8,9 @@
                 </tr>
                 <tr>
                     <th>Select</th>
-                    <th>Item</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
                     <th>Price</th>
                 </tr>
             </thead>
@@ -16,19 +18,25 @@
                 <xsl:for-each select="/cafemenu/section">
                     <tr>
                         <td colspan="3">
-                            <xsl:value-of select="@name" />
+                            <xsl:value-of select="@gender" />
                         </td>
                     </tr>
                     <xsl:for-each select="entree">
                         <tr id="{position()}">
-                            <xsl:attribute name="vegetarian">
-                                <xsl:value-of select="boolean(@vegetarian)" />
+                            <xsl:attribute name="free">
+                                <xsl:value-of select="boolean(@free)" />
                             </xsl:attribute>
                             <td align="center">
                                 <input name="item0" type="checkbox" />
                             </td>
                             <td>
                                 <xsl:value-of select="item" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="author" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="year" />
                             </td>
                             <td align="right">
                                 <xsl:value-of select="price" />

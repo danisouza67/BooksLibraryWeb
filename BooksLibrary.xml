@@ -52,7 +52,7 @@
             <price>3.99</price>
         </entree>
     </section>
-    <section name="Crime">
+    <section gender="Crime">
         <entree>
             <item>SNOW</item>
             <author>John Banville</author>
@@ -72,7 +72,7 @@
             <price>Free</price>
         </entree>
     </section>
-    <section name="Contemporary">
+    <section gender="Contemporary">
         <entree>
             <item>THE GLORIOUS GUINNESS GIRLS</item>
             <author>Emily Hourican</author>
