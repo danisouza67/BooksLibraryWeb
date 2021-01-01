@@ -33,62 +33,62 @@
             <year>2020</year>
             <price>8.29</price>
         </entree>
-        <entree vegetarian="true">
+        <entree free="true">
             <item>A LIGHT THAT NEVER GOES OUT</item>
             <author>Keelin Shanley</author>
             <year>2020</year>
             <price>Free</price>
         </entree>
-        <entree vegetarian="true">
+        <entree free="true">
             <item>OLD IRELAND IN COLOUR</item>
             <author>John G. Breslin</author>
             <year>2020</year>
             <price>Free</price>
         </entree>
         <entree>
-            <item>Croissant</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+            <item>THE ICKABOG</item>
+            <author>J. K. Rowling</author>
+            <year>2015</year>
             <price>3.99</price>
         </entree>
     </section>
-    <section name="Lunch">
+    <section name="Crime">
         <entree>
-            <item>Grilled Chicken Sandwich</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+            <item>SNOW</item>
+            <author>John Banville</author>
+            <year>2005</year>
             <price>7.99</price>
         </entree>
         <entree>
-            <item>Tuna Melt</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+            <item>A LIFE ON OUR PLANET</item>
+            <author>David Attenborough</author>
+            <year>2017</year>
             <price>6.99</price>
         </entree>
-        <entree vegetarian="true">
-            <item>Pasta Salad</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+        <entree free="true">
+            <item>BEYOND THE TAPE</item>
+            <author>Marie Cassidy</author>
+            <year>2010</year>
             <price>Free</price>
         </entree>
     </section>
-    <section name="Dinner">
+    <section name="Contemporary">
         <entree>
-            <item>Ribeye Steak</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+            <item>THE GLORIOUS GUINNESS GIRLS</item>
+            <author>Emily Hourican</author>
+            <year>2014</year>
             <price>15</price>
         </entree>
         <entree>
-            <item>Chilean Sea Bass</item>
-            <author>Jeanine Cummins</author>
+            <item>GUINNESS WORLD RECORDS 2021</item>
+            <author>Guinness World Records</author>
             <year>2020</year>
             <price>14.5</price>
         </entree>
-        <entree vegetarian="true">
-            <item>Linguini with Grilled Porcini Mushroom</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
+        <entree free="true">
+            <item>GORDONS GAME 2 BLUE THUNDER HB</item>
+            <author>Gordon D'Arcy</author>
+            <year>2016</year>
             <price>Free</price>
         </entree>
     </section>
