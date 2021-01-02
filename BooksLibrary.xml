@@ -1,95 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <library>
-    <section gender="Fiction">
-        <entree free="true">
-            <item>THE HUNTING PARTY</item>
-            <author>Joakim Caverna</author>
-            <year>2019</year>
-            <price>0</price>
-        </entree>
-        <entree>
-            <item>AMERICAN DIRT</item>
-            <author>Jeanine Cummins</author>
-            <year>2020</year>
-            <price>7.50</price>
-        </entree>
-        <entree>
-            <item>HOME STRETCH TPB</item>
-            <author>Graham Norton</author>
-            <year>2020</year>
-            <price>8.50</price>
-        </entree>
-    </section>
-    <section name="Humour">
-        <entree>
-            <item>RIPLEY'S BELIEVE IT OR NOT!</item>
-            <author>Robert L. Ripley</author>
-            <year>2020</year>
-            <price>4.99</price>
-        </entree>
-        <entree>
-            <item>A LIGHT THAT NEVER GOES OUT</item>
-            <author>Keelin Shanley</author>
-            <year>2020</year>
-            <price>8.29</price>
-        </entree>
-        <entree free="true">
-            <item>A LIGHT THAT NEVER GOES OUT</item>
-            <author>Keelin Shanley</author>
-            <year>2020</year>
-            <price>0</price>
-        </entree>
-        <entree free="true">
-            <item>OLD IRELAND IN COLOUR</item>
-            <author>John G. Breslin</author>
-            <year>2020</year>
-            <price>0</price>
-        </entree>
-        <entree>
-            <item>THE ICKABOG</item>
-            <author>J. K. Rowling</author>
-            <year>2015</year>
-            <price>3.99</price>
-        </entree>
-    </section>
-    <section gender="Crime">
-        <entree>
-            <item>SNOW</item>
-            <author>John Banville</author>
-            <year>2005</year>
-            <price>7.99</price>
-        </entree>
-        <entree>
-            <item>A LIFE ON OUR PLANET</item>
-            <author>David Attenborough</author>
-            <year>2017</year>
-            <price>6.99</price>
-        </entree>
-        <entree free="true">
-            <item>BEYOND THE TAPE</item>
-            <author>Marie Cassidy</author>
-            <year>2010</year>
-            <price>0</price>
-        </entree>
-    </section>
-    <section gender="Contemporary">
-        <entree>
-            <item>THE GLORIOUS GUINNESS GIRLS</item>
-            <author>Emily Hourican</author>
-            <year>2014</year>
-            <price>15</price>
-        </entree>
-        <entree>
-            <item>GUINNESS WORLD RECORDS 2021</item>
-            <author>Guinness World Records</author>
-            <year>2020</year>
-            <price>14.5</price>
-        </entree>
-        <entree free="true">
-            <item>GORDONS GAME 2 BLUE THUNDER HB</item>
-            <author>Gordon D'Arcy</author>
-            <year>2016</year>
-            <price>0</price>
-        </entree>
-    </section>
+  <section gender="Fiction">
+    <entree free="true">
+      <item>THE HUNTING PARTY</item>
+      <author>Joakim Caverna</author>
+      <year>2019</year>
+      <price>0</price>
+    </entree>
+    <entree>
+      <item>AMERICAN DIRT</item>
+      <author>Jeanine Cummins</author>
+      <year>2020</year>
+      <price>7.50</price>
+    </entree>
+    <entree>
+      <item>HOME STRETCH TPB</item>
+      <author>Graham Norton</author>
+      <year>2020</year>
+      <price>8.50</price>
+    </entree>
+    <entree>
+      <item>asd</item>
+      <price>231</price>
+    </entree>
+    <entree>
+      <item>Juribel</item>
+      <price>120</price>
+    </entree>
+  </section>
+  <section name="Humour">
+    <entree>
+      <item>RIPLEY'S BELIEVE IT OR NOT!</item>
+      <author>Robert L. Ripley</author>
+      <year>2020</year>
+      <price>4.99</price>
+    </entree>
+    <entree>
+      <item>A LIGHT THAT NEVER GOES OUT</item>
+      <author>Keelin Shanley</author>
+      <year>2020</year>
+      <price>8.29</price>
+    </entree>
+    <entree free="true">
+      <item>A LIGHT THAT NEVER GOES OUT</item>
+      <author>Keelin Shanley</author>
+      <year>2020</year>
+      <price>0</price>
+    </entree>
+    <entree free="true">
+      <item>OLD IRELAND IN COLOUR</item>
+      <author>John G. Breslin</author>
+      <year>2020</year>
+      <price>0</price>
+    </entree>
+    <entree>
+      <item>THE ICKABOG</item>
+      <author>J. K. Rowling</author>
+      <year>2015</year>
+      <price>3.99</price>
+    </entree>
+  </section>
+  <section gender="Crime">
+    <entree>
+      <item>SNOW</item>
+      <author>John Banville</author>
+      <year>2005</year>
+      <price>7.99</price>
+    </entree>
+    <entree>
+      <item>A LIFE ON OUR PLANET</item>
+      <author>David Attenborough</author>
+      <year>2017</year>
+      <price>6.99</price>
+    </entree>
+    <entree free="true">
+      <item>BEYOND THE TAPE</item>
+      <author>Marie Cassidy</author>
+      <year>2010</year>
+      <price>0</price>
+    </entree>
+  </section>
+  <section gender="Contemporary">
+    <entree>
+      <item>THE GLORIOUS GUINNESS GIRLS</item>
+      <author>Emily Hourican</author>
+      <year>2014</year>
+      <price>15</price>
+    </entree>
+    <entree>
+      <item>GUINNESS WORLD RECORDS 2021</item>
+      <author>Guinness World Records</author>
+      <year>2020</year>
+      <price>14.5</price>
+    </entree>
+    <entree free="true">
+      <item>GORDONS GAME 2 BLUE THUNDER HB</item>
+      <author>Gordon D'Arcy</author>
+      <year>2016</year>
+      <price>0</price>
+    </entree>
+    <entree>
+      <item>ratinho</item>
+      <price>1</price>
+    </entree>
+  </section>
 </library>

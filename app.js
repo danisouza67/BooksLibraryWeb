@@ -62,7 +62,7 @@ router.post('/post/json', function (req, res) {
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
             
-            result.library.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price});
+            result.library.section[obj.sec_n].entree.push({'item': obj.item, 'author': obj.author, 'year': obj.year, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -87,7 +87,7 @@ router.post('/post/delete', function (req, res) {
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.library.section[obj.section].entree[obj.entree];
+            delete result.library.section[obj.sec_n].entree[obj.entree];
 
             console.log(JSON.stringify(result, null, "  "));
 
