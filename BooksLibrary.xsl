@@ -21,7 +21,7 @@
                             <xsl:value-of select="@gender" />
                         </td>
                     </tr>
-                    <xsl:for-each select="entree">
+                    <xsl:for-each select="book">
                         <tr id="{position()}">
                             <xsl:attribute name="free">
                                 <xsl:value-of select="boolean(@free)" />

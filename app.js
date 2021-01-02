@@ -1,3 +1,5 @@
+
+
 var http = require('http'), //This module provides the HTTP server functionalities
     path = require('path'), //The path module provides utilities for working with file and directory paths
     express = require('express'), //This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
@@ -62,7 +64,7 @@ router.post('/post/json', function (req, res) {
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
             
-            result.library.section[obj.sec_n].entree.push({'item': obj.item, 'author': obj.author, 'year': obj.year, 'price': obj.price});
+            result.library.section[obj.sec_n].book.push({'item': obj.item, 'author': obj.author, 'year': obj.year, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -87,7 +89,7 @@ router.post('/post/delete', function (req, res) {
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.library.section[obj.sec_n].entree[obj.entree];
+            delete result.library.section[obj.sec_n].book[obj.book];
 
             console.log(JSON.stringify(result, null, "  "));
 

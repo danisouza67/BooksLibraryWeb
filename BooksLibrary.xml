@@ -1,107 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <library>
   <section gender="Fiction">
-    <entree free="true">
+    <book free="true">
       <item>THE HUNTING PARTY</item>
       <author>Joakim Caverna</author>
       <year>2019</year>
       <price>0</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>AMERICAN DIRT</item>
       <author>Jeanine Cummins</author>
       <year>2020</year>
       <price>7.50</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>HOME STRETCH TPB</item>
       <author>Graham Norton</author>
       <year>2020</year>
       <price>8.50</price>
-    </entree>
-    <entree>
-      <item>asd</item>
-      <price>231</price>
-    </entree>
-    <entree>
-      <item>Juribel</item>
-      <price>120</price>
-    </entree>
+    </book>
+    <book>
+      <item>asdsa</item>
+      <author>dasdasd</author>
+      <year>3221</year>
+      <price>1233</price>
+    </book>
+    <book>
+      <item/>
+      <author/>
+      <year/>
+      <price/>
+    </book>
   </section>
-  <section name="Humour">
-    <entree>
+  <section gender="Humour">
+    <book>
       <item>RIPLEY'S BELIEVE IT OR NOT!</item>
       <author>Robert L. Ripley</author>
       <year>2020</year>
       <price>4.99</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>A LIGHT THAT NEVER GOES OUT</item>
       <author>Keelin Shanley</author>
       <year>2020</year>
       <price>8.29</price>
-    </entree>
-    <entree free="true">
+    </book>
+    <book free="true">
       <item>A LIGHT THAT NEVER GOES OUT</item>
       <author>Keelin Shanley</author>
       <year>2020</year>
       <price>0</price>
-    </entree>
-    <entree free="true">
+    </book>
+    <book free="true">
       <item>OLD IRELAND IN COLOUR</item>
       <author>John G. Breslin</author>
       <year>2020</year>
       <price>0</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>THE ICKABOG</item>
       <author>J. K. Rowling</author>
       <year>2015</year>
       <price>3.99</price>
-    </entree>
+    </book>
+    <book>
+      <item>Evangelicos de Ateu</item>
+      <author>Daniel Souza</author>
+      <year>21312</year>
+      <price>3213</price>
+    </book>
   </section>
   <section gender="Crime">
-    <entree>
+    <book>
       <item>SNOW</item>
       <author>John Banville</author>
       <year>2005</year>
       <price>7.99</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>A LIFE ON OUR PLANET</item>
       <author>David Attenborough</author>
       <year>2017</year>
       <price>6.99</price>
-    </entree>
-    <entree free="true">
+    </book>
+    <book free="true">
       <item>BEYOND THE TAPE</item>
       <author>Marie Cassidy</author>
       <year>2010</year>
       <price>0</price>
-    </entree>
+    </book>
   </section>
   <section gender="Contemporary">
-    <entree>
+    <book>
       <item>THE GLORIOUS GUINNESS GIRLS</item>
       <author>Emily Hourican</author>
       <year>2014</year>
       <price>15</price>
-    </entree>
-    <entree>
+    </book>
+    <book>
       <item>GUINNESS WORLD RECORDS 2021</item>
       <author>Guinness World Records</author>
       <year>2020</year>
       <price>14.5</price>
-    </entree>
-    <entree free="true">
+    </book>
+    <book free="true">
       <item>GORDONS GAME 2 BLUE THUNDER HB</item>
       <author>Gordon D'Arcy</author>
       <year>2016</year>
       <price>0</price>
-    </entree>
-    <entree>
-      <item>ratinho</item>
-      <price>1</price>
-    </entree>
+    </book>
   </section>
 </library>
