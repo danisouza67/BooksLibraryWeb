@@ -19,12 +19,6 @@
       <year>2020</year>
       <price>8.50</price>
     </book>
-    <book>
-      <item>asdas</item>
-      <author>asdasd</author>
-      <year>1233</year>
-      <price>123</price>
-    </book>
   </section>
   <section gender="Humour">
     <book>
@@ -82,12 +76,6 @@
       <author>Marie Cassidy</author>
       <year>2010</year>
       <price>0</price>
-    </book>
-    <book>
-      <item>ghj</item>
-      <author>ghjgh</author>
-      <year>3321</year>
-      <price>3245</price>
     </book>
   </section>
   <section gender="Contemporary">
