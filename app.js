@@ -56,7 +56,7 @@ router.get('/get/html', function(req, res) {
 });
 
 router.post('/post/json', function (req, res) {
-
+//function coming from index.html  (form left menu), save data to xml file
     function appendJSON(obj) {
 
         console.log(obj)
@@ -81,6 +81,7 @@ router.post('/post/json', function (req, res) {
 });
 
 router.post('/post/delete', function (req, res) {
+//function coming from index.html  (form left menu), delete selected row
 
     function deleteJSON(obj) {
 

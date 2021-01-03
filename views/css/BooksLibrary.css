@@ -23,11 +23,13 @@ table, th, td {
  table {
      border-collapse: collapse;
      width:100%;
+     
 }
  td, th {
      border: 1px solid #ced4da;
      padding: 0.5rem;
      text-align: left;
+     border-radius: 25px;
 }
  th {
      font-weight: bold;
