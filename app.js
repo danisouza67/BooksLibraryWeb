@@ -1,3 +1,4 @@
+// This entire page was made by Mikhail - CCT
 
 
 var http = require('http'), //This module provides the HTTP server functionalities
@@ -12,36 +13,36 @@ var router = express(); //We set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
 
 router.use(express.static(path.resolve(__dirname, 'views'))); //We define the views folder as the one where all static content will be served
-router.use(express.urlencoded({extended: true})); //We allow the data sent from the client to be coming in as part of the URL in GET and POST requests
+router.use(express.urlencoded({ extended: true })); //We allow the data sent from the client to be coming in as part of the URL in GET and POST requests
 router.use(express.json()); //We include support for JSON that is coming from the client
 
 // Function to read in XML file and convert it to JSON
 function xmlFileToJs(filename, cb) {
-  var filepath = path.normalize(path.join(__dirname, filename));
-  fs.readFile(filepath, 'utf8', function(err, xmlStr) {
-    if (err) throw (err);
-    xml2js.parseString(xmlStr, {}, cb);
-  });
+    var filepath = path.normalize(path.join(__dirname, filename));
+    fs.readFile(filepath, 'utf8', function (err, xmlStr) {
+        if (err) throw (err);
+        xml2js.parseString(xmlStr, {}, cb);
+    });
 }
 
 //Function to convert JSON to XML and save it
 function jsToXmlFile(filename, obj, cb) {
-  var filepath = path.normalize(path.join(__dirname, filename));
-  var builder = new xml2js.Builder();
-  var xml = builder.buildObject(obj);
-  fs.unlinkSync(filepath);
-  fs.writeFile(filepath, xml, cb);
+    var filepath = path.normalize(path.join(__dirname, filename));
+    var builder = new xml2js.Builder();
+    var xml = builder.buildObject(obj);
+    fs.unlinkSync(filepath);
+    fs.writeFile(filepath, xml, cb);
 }
 
-router.get('/', function(req, res) {
+router.get('/', function (req, res) {
 
     res.render('index');
 
 });
 
-router.get('/get/html', function(req, res) {
+router.get('/get/html', function (req, res) {
 
-    res.writeHead(200, {'Content-Type': 'text/html'}); //We are responding to the client that the content served back is HTML and the it exists (code 200)
+    res.writeHead(200, { 'Content-Type': 'text/html' }); //We are responding to the client that the content served back is HTML and the it exists (code 200)
 
     var xml = fs.readFileSync('BooksLibrary.xml', 'utf8'); //reading in the XML file
     var xsl = fs.readFileSync('BooksLibrary.xsl', 'utf8'); //reading in the XSL file
@@ -56,19 +57,19 @@ router.get('/get/html', function(req, res) {
 });
 
 router.post('/post/json', function (req, res) {
-//function coming from index.html  (form left menu), save data to xml file
+    //function coming from index.html  (form left menu), save data to xml file
     function appendJSON(obj) {
 
         console.log(obj)
 
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
-            
-            result.library.section[obj.sec_n].book.push({'item': obj.item, 'author': obj.author, 'year': obj.year, 'price': obj.price});
+
+            result.library.section[obj.sec_n].book.push({ 'item': obj.item, 'author': obj.author, 'year': obj.year, 'price': obj.price });
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('BooksLibrary.xml', result, function(err){
+            jsToXmlFile('BooksLibrary.xml', result, function (err) {
                 if (err) console.log(err);
             });
         });
@@ -81,7 +82,7 @@ router.post('/post/json', function (req, res) {
 });
 
 router.post('/post/delete', function (req, res) {
-//function coming from index.html  (form left menu), delete selected row
+    //function coming from index.html  (form left menu), delete selected row
 
     function deleteJSON(obj) {
 
@@ -89,12 +90,12 @@ router.post('/post/delete', function (req, res) {
 
         xmlFileToJs('BooksLibrary.xml', function (err, result) {
             if (err) throw (err);
-            
-            delete result.library.section[obj.sec_n].book[obj.book];
+
+            delete result.library.section.book;
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('BooksLibrary.xml', result, function(err){
+            jsToXmlFile('BooksLibrary.xml', result, function (err) {
                 if (err) console.log(err);
             });
         });

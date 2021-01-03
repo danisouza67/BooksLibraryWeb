@@ -1,3 +1,6 @@
+<!--  This entire document was made by Mikhail and adapted by Daniel Souza - CCT -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +61,8 @@
             <div class="col-lg-4 order-1">
                 <form enctype="application/json" action="/post/json" method="post">
                     <div class="form-group">
-                        <select class="form-control" name="sec_n">
+                        <select class="form-control" name="sec_n" required>
+                            <option value="" disabled selected>Please Choose Gender...</option>
                             <option value="0">Fiction</option>
                             <option value="1">Humour</option>
                             <option value="2">Crime</option>
@@ -67,13 +71,16 @@
                         <input class="form-control mt-3" type="text" name="item" placeholder="Title">
                         <input class="form-control mt-3" type="text" name="author" placeholder="Author">
                         <input class="form-control mt-3" type="number" name="year" placeholder="Year">
-                        <input class="form-control mt-3" type="number" name="price" placeholder="Price">
+                        <input class="form-control mt-3" type="number" min="0" step=".01" name="price"
+                            placeholder="Price">
                         <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
-                        <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
                     </div>
                 </form>
-                
-                <p class="text-muted text-center">To delete an entree, click the required row first</p>
+                <form enctype="application/delete" action="/post/delete" method="post">
+                    <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
+                    <p class="text-muted text-center">To delete an entree, click the required row first</p>
+                </form>
+
                 <form>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -88,21 +95,21 @@
 
                 <form action="">
                     <br>
-                <div class="input-group-append" style="vertical-align:middle; float: inline-start;">
-                    <div>
-                        <p>Highlight Free books available</p>
+                    <div class="input-group-append" style="vertical-align:middle; float: inline-start;">
+                        <div>
+                            <p>Highlight Free books available</p>
+                        </div>
+                        <div class="input-group-text" style="margin: 1%;float: right;vertical-align: middle;">
+                            <input type="checkbox" id="showFree" aria-label="Checkbox for following text input">
+                        </div>
                     </div>
-                    <div class="input-group-text" style="margin: 1%;float: right;vertical-align: middle;">
-                        <input type="checkbox" id="showFree" aria-label="Checkbox for following text input">
-                    </div>
-                </div>
                 </form>
 
             </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="container text-center"><span class="text-muted">&copy; 2020</span></div>
+        <div class="container text-center"><span class="text-muted">CCT - 2020</span></div>
     </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
